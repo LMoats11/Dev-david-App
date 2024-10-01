@@ -3,69 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeopardy Game</title>
-    
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
-    
+    <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="row text-center mb-4">
-            <div class="col-12">
-                <h1>MOVIES</h1>
-            </div>
+        <h1>Tic Tac Toe</h1>
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
         </div>
-
-        <div class="row text-center mb-3">
-            <div class="col-md-2 offset-md-1"><h4>They started in</h4></div>
-            <div class="col-md-2"><h4>Action</h4></div>
-            <div class="col-md-2"><h4>Who voice'd</h4></div>
-            <div class="col-md-2"><h4>Romantic Movies</h4></div>
-            <div class="col-md-2"><h4>Disney</h4></div>
-        </div>
-
-        <div class="row">
-          
-            <!-- First Category -->
-            <div class="col-md-2 offset-md-1">
-                <div class="card mb-2 text-center">
-                    <div class="card-body" onclick="showQuestion(this, 'Question 1')">100</div>
-                </div>
-                <div class="card mb-2 text-center">
-                    <div class="card-body" onclick="showQuestion(this, 'Question 2')">200</div>
-                </div>
-                <div class="card mb-2 text-center">
-                    <div class="card-body" onclick="showQuestion(this, 'Question 3')">300</div>
-                </div>
-                <div class="card text-center">
-                    <div class="card-body" onclick="showQuestion(this, 'Question 4')">400</div>
-                </div>
-            </div>
-
-            <!-- Second Category -->
-            <div class="col-md-2">
-                <div class="card mb-2 text-center">
-                    <div class="card-body" onclick="showQuestion(this, 'Question 5')">100</div>
-                </div>
-                <div class="card mb-2 text-center">
-                    <div class="card-body" onclick="showQuestion(this, 'Question 6')">200</div>
-                </div>
-                <div class="card mb-2 text-center">
-                    <div class="card-body" onclick="showQuestion(this, 'Question 7')">300</div>
-                </div>
-                <div class="card text-center">
-                    <div class="card-body" onclick="showQuestion(this, 'Question 8')">400</div>
-                </div>
-            </div>
-
-            <!-- Continue for remaining categories... -->
-        </div>
+        <button id="resetBtn">Reset Game</button>
+        <p id="status"></p>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
-    
     <script src="script.js"></script>
 </body>
+</html>
 </html>
