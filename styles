@@ -1,0 +1,27 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #000;
+    border: 5px solid #333;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
